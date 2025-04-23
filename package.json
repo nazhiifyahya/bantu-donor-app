@@ -21,7 +21,7 @@
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.17.30",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/sequelize": "^4.28.20",
