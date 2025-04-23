@@ -1,8 +1,10 @@
 import { Sequelize } from 'sequelize';
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 
 // Load environment variables from .env.local
-config();
+dotenv.config({ path: '.env.local' });
+console.log('DATABASE_URL:', process.env.DATABASE_URL);
+
 
 // Get the DATABASE_URL from environment variables
 const databaseUrl = process.env.DATABASE_URL;
@@ -29,3 +31,4 @@ const testConnection = async () => {
 
 export default sequelize;
 
+testConnection();
