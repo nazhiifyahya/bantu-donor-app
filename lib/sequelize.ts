@@ -19,16 +19,4 @@ const sequelize = new Sequelize(databaseUrl, {
   logging: false,
 });
 
-// Test the connection
-const testConnection = async () => {
-  try {
-    await sequelize.authenticate();
-    console.log('Connection has been established successfully.');
-  } catch (error) {
-    console.error('Unable to connect to the database:', error);
-  }
-};
-
 export default sequelize;
-
-testConnection();
