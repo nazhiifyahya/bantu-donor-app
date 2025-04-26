@@ -25,6 +25,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/sequelize": "^4.28.20",
+    "daisyui": "^5.0.28",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",
