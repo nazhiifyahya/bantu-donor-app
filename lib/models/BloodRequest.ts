@@ -26,13 +26,25 @@ BloodRequest.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isEmail: true,
+      },
+    },
     contactNumber: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    location: {
+      type: DataTypes.GEOMETRY('POINT', 4326),
       allowNull: false,
     },
     requestDate: {
       type: DataTypes.DATE,
       allowNull: false,
+      defaultValue: DataTypes.NOW,
     },
     status: {
       type: DataTypes.STRING,
